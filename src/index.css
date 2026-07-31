@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cg-bg: #060a08;
+  --color-cg-panel: #0d1410;
+  --color-cg-line: #1c2a22;
+  --color-cg-green: #39ff88;
+  --color-cg-green-dim: #1f7a44;
+  --color-cg-amber: #ffb020;
+  --color-cg-red: #ff4d4d;
+  --color-cg-text: #d6e8dc;
+  --color-cg-dim: #5c7268;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #060a08;
+  background-image: 
+    linear-gradient(rgba(57, 255, 136, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(57, 255, 136, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: #d6e8dc;
+  font-family: 'JetBrains Mono', monospace;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom styling for range input slider to match green terminal theme */
+input[type="range"] {
+  accent-color: #39ff88;
+}
+
+/* Custom glow effects for strength bars and buttons */
+.shadow-glow-green {
+  box-shadow: 0 0 10px rgba(57, 255, 136, 0.4);
+}
+
+.shadow-glow-amber {
+  box-shadow: 0 0 10px rgba(255, 176, 32, 0.4);
+}
+
+.shadow-glow-red {
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
+}
